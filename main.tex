@@ -1,0 +1,85 @@
+\documentclass[conf]{new-aiaa}
+\usepackage{authblk}
+\usepackage[utf8]{inputenc}
+\usepackage{graphicx}
+\usepackage{amsmath}
+\usepackage[version=4]{mhchem}
+\usepackage{siunitx}
+\usepackage{longtable,tabularx}
+\usepackage{verbatim}
+\usepackage{float}
+\usepackage{xcolor}
+\usepackage{color, colortbl}
+\usepackage{tabu}
+\usepackage{hhline}
+\usepackage{caption}
+\usepackage{wrapfig}
+\usepackage{multicol}
+\usepackage{lipsum}
+\usepackage{multirow}
+\usepackage{subcaption}
+\usepackage{tocloft}
+\usepackage{rotating}
+\usepackage{csquotes}
+\usepackage{dirtytalk}
+\usepackage[justification=centering]{caption}
+\setlength\LTleft{0pt} 
+
+
+\title{AAE 590 Ground Launch Demonstrator}
+
+\author{Derek Cameron, Christopher Chiesa, John Ellis, Jordan Fisher, Melanie Grande, Coby Jacobs, Stephen Kubicki, Ariana Martinez, Silas Meriam, Eric Miller, Steven Pugia, Jonathan Rohwer, Thomas Satterly, and Manav Vaghashiya​\footnote{Student, School of Aeronautics and Astronautics, Purdue University.}}
+\affil{Purdue University, West Lafayette, Indiana, 47906}
+
+\addtolength{\cftsecnumwidth}{1em}
+\cftsetindents{subsection}{2.5em}{3em}
+\cftsetindents{subsubsection}{5.5em}{4.5em}
+
+\begin{document}
+\setcounter{secnumdepth}{3}
+\maketitle
+\begin{abstract}
+This study presents a concept design for a solid fuel ramjet (SFRJ) ground launch demonstrator. The purpose of the concept study was to evaluate the feasibility of an SFRJ, as well as to explore effective inlet design, novel air bypass strategies, and the ability to perform two maneuvers during the burn. This paper will review the resulting design and simulation, including the AeroValve pattern created for various stages of flight, the chin-style inlet design, trade studies on fuel additives and fin mechanisms, and much more. The integration of all the design methods in a simulator demonstrated that the SFRJ is a feasible concept with nearly 30 seconds of burn time and 12 miles of ground range. Further, the concept can be improved depending on the implementation of various design trades, as demonstrated by the simulator created for this study. 
+\end{abstract}
+
+\tableofcontents
+
+% Nomenclature
+\input{Nomenclature.tex}
+
+% Introduction
+\input{Introduction.tex}
+
+% Design Overview
+\input{DesignOverview.tex}
+
+% Inlet Design
+\input{InletDesign.tex}
+
+% Combustor Design
+\input{CombustorDesign.tex}
+
+% Nozzle Design
+\input{NozzleDesign.tex}
+
+% Airframe Design
+\input{AirframeDesign.tex}
+
+% Fin Design
+\input{FinDesign.tex}
+
+% Modeling and Simulation
+\input{ModelingAndSimulation.tex}
+
+% Parameter Sweeps
+\input{ParameterSweeps.tex}
+
+% Appendix
+\input{AppendixA.tex}
+
+% Acknowledgements
+\section{Acknowledgments}
+
+\bibliography{GLDReferences}
+
+\end{document}

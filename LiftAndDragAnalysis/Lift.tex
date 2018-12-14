@@ -1,0 +1,12 @@
+\subsubsection{Lift Analysis - Thomas Satterly}
+
+Lift is a complicated metric to calculate when in the early stages of design. For this analysis, a lift coefficient was approximated by using a cylindrical lifting body model \cite{fleeman_2001}, outlined in Equations \ref{eqn:normalCoeff} - \ref{eqn:lift}. In addition to the lifting body force, the lift coefficients of the movable and stationary fins, calculated using a CFD model, were added to create a final lift coefficient value. 
+
+\begin{align}
+    C_n &= \sin(2\alpha)\cos(\alpha/2) + 2 \frac{L_{cyl}}{D_{cyl}}sin(\alpha)^2
+    \label{eqn:normalCoeff}\\
+    C_L &= \cos(\alpha)C_n + C_{L, fins}
+    \label{eqn:liftCoeff}\\
+    L &= 0.5\rho V^2 S C_L
+    \label{eqn:lift}
+\end{align}
